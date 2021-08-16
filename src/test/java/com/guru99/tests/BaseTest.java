@@ -36,8 +36,9 @@ public class BaseTest {
 	public void preSetup() throws Exception {
 		currentWrokingDirectoy=System.getProperty("user.dir");
 		configFileName=currentWrokingDirectoy+"/config/config.properties";
+		executionTime=System.currentTimeMillis();
 		//reportFileName=currentWrokingDirectoy+"/reports/guru99TestReport.html";
-		reportFileName=currentWrokingDirectoy+"/reports/guru99TestReport.html";
+		reportFileName=currentWrokingDirectoy+"/reports/guru99TestReport_"+executionTime+".html";
 		configProperty=ConfigUtils.readProperties(configFileName);
 		reportUtils=new ReportUtils(reportFileName);
 	}

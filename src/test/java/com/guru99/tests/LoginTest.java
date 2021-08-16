@@ -14,7 +14,7 @@ public class LoginTest extends BaseTest{
 		reportUtils.createATestCase("verifyUserLoginWithCorrectCredentials");
 		reportUtils.addTestLog(Status.INFO, "performing Login");
 		loginpage.loginToApplication(username, password);
-		String expectedTitle="Guru99 Bank Manager Home Page";
+		String expectedTitle="Guru99 Bank Manager HomePage";
 		String actualTitle=comDriver.getTitleOfThePage();
 		reportUtils.addTestLog(Status.INFO, "Compairing expected and actual title");
 		Assert.assertEquals(actualTitle,expectedTitle);

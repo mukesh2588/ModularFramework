@@ -26,7 +26,7 @@ public class CommonDriver {
 		}
 		else if(browserType.equalsIgnoreCase("edge"))
 		{
-			System.setProperty("webdriver.chrome.driver", currentWorkingDirectory+"/drivers/msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", currentWorkingDirectory+"/drivers/msedgedriver.exe");
 			driver=new EdgeDriver();
 		}
 		else
